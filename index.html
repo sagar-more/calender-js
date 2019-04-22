@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-framework="javascript">
+
   <head>
     <meta charset="utf-8" />
     <title>Calendar App</title>
@@ -7,6 +8,7 @@
   </head>
 
   <body>
+    <h3></h3>
     <div class="calender-container">
       <div class="days" data-day="0" data-day-text="sunday">Sunday</div>
       <div class="days" data-day="1" data-day-text="monday">Monday</div>
@@ -18,12 +20,19 @@
     </div>
     <div class="pop-up-container" style="display:none;">
       <div class="pop-up">
-        <label>Add appointment </label>
+        <h4>Add appointment details</h4>
         <textarea value="" class="details"></textarea>
         <button type="button" class="button save">Save</button>
         <button type="button" class="button close">Close</button>
       </div>
     </div>
+    <div class="warning pop-up-container" style="display:none;">
+      <div class="pop-up">
+        <h4 class="warning-text"></h4>
+        <button class="button ok">OK</button>
+      </div>
+    </div>
     <script src="js/calendar.js"></script>
   </body>
+
 </html>
