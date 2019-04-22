@@ -1,23 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-framework="javascript">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="css/calendar.css" />
+  </head>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Calendar App</title>
-		<link rel="stylesheet" href="css/calendar.css">
-	</head>
-
-	<body>
-		<div class="calender-container">
-			<div class="days" data-day="0" data-day-text="sunday">Sunday</div>
-			<div class="days" data-day="1" data-day-text="monday">Monday</div>
-			<div class="days" data-day="2" data-day-text="tuesday">Tuesday</div>
-			<div class="days" data-day="3" data-day-text="wednesday">Wednesday</div>
-			<div class="days" data-day="4" data-day-text="thursaday">Thursday</div>
-			<div class="days" data-day="5" data-day-text="friday">Friday</div>
-			<div class="days" data-day="6" data-day-text="saturday">Saturday</div>
-		</div>
-		<script src="js/calendar.js"></script>
-	</body>
-
+  <body>
+    <div class="calender-container">
+      <div class="days" data-day="0" data-day-text="sunday">Sunday</div>
+      <div class="days" data-day="1" data-day-text="monday">Monday</div>
+      <div class="days" data-day="2" data-day-text="tuesday">Tuesday</div>
+      <div class="days" data-day="3" data-day-text="wednesday">Wednesday</div>
+      <div class="days" data-day="4" data-day-text="thursaday">Thursday</div>
+      <div class="days" data-day="5" data-day-text="friday">Friday</div>
+      <div class="days" data-day="6" data-day-text="saturday">Saturday</div>
+    </div>
+    <div class="pop-up-container" style="display:none;">
+      <div class="pop-up">
+        <label>Add appointment </label>
+        <textarea value="" class="details"></textarea>
+        <button type="button" class="button save">Save</button>
+        <button type="button" class="button close">Close</button>
+      </div>
+    </div>
+    <script src="js/calendar.js"></script>
+  </body>
 </html>

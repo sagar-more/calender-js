@@ -1,20 +1,80 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .calender-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    align-items: center;
-    min-width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-items: center;
+  min-width: 600px;
 }
 
+.days[data-day-text] {
+  height: 40px;
+}
 .days {
-    flex: 14.28%;
+  flex: 13.28%;
+  height: 100px;
+  text-align: left;
+  /* border: 1px solid; */
+  cursor: pointer;
+  position: relative;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.days:empty {
+  border: none;
+  cursor: default;
+  pointer-events: none;
+}
+
+.pop-up-container {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(56, 50, 50, 0.5);
+}
+
+.pop-up-container .pop-up {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  background-color: #ffffff;
+}
+
+.details {
+  width: calc(100% - 50px);
+  padding: 10px;
+}
+
+button {
+  bottom: 0;
+  position: absolute;
+  cursor: pointer;
+}
+.save,
+.close {
+  position: relative;
+}
+.edit {
+  left: 0;
+}
+
+.del {
+  right: 0;
 }
